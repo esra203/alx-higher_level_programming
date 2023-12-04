@@ -1,6 +1,9 @@
-#!/usr/bin/env python3
-no_c = __import__('5-no_c').no_c
+#!/usr/bin/python3
+# 5-no_c.py
+# Brennan D Baraban <375@holbertonschool.com>
 
-print(no_c("Best School"))
-print(no_c("Chicago"))
-print(no_c("C is fun!"))
+
+def no_c(my_string):
+    """Remove all characters c and C from a string."""
+    copy = [x for x in my_string if x != 'c' and x != 'C']
+    return ("".join(copy))
